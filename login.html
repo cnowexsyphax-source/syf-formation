@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Connexion | SYF Formation</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="login-page">
+
+<div class="login-box">
+
+<i class="fa-solid fa-lock" style="font-size:70px;color:#0f62fe;margin-bottom:20px;"></i>
+
+<h1>Connexion</h1>
+
+<p>
+
+Entrez votre code d'accès pour débloquer toutes les formations.
+
+</p>
+
+<input
+type="text"
+id="code"
+placeholder="Exemple : FRM-825-SYF"
+autocomplete="off"
+>
+
+<button onclick="verifierCode()">
+
+Accéder aux formations
+
+</button>
+
+<p id="erreur"
+style="color:red;margin-top:20px;font-weight:600;"></p>
+
+<a href="index.html"
+style="display:block;margin-top:25px;color:#0f62fe;font-weight:600;">
+
+← Retour à l'accueil
+
+</a>
+
+</div>
+
+<script>
+
+const CODE = "FRM-825-SYF";
+
+function verifierCode(){
+
+const code =
+document.getElementById("code").value.trim().toUpperCase();
+
+if(code===CODE){
+
+localStorage.setItem("syf_connecte","oui");
+
+window.location.href="formations.html";
+
+}else{
+
+document.getElementById("erreur").innerHTML="❌ Code d'accès invalide.";
+
+}
+
+}
+
+document.getElementById("code").addEventListener("keypress",function(e){
+
+if(e.key==="Enter"){
+
+verifierCode();
+
+}
+
+});
+
+</script>
+
+</body>
+
+</html>

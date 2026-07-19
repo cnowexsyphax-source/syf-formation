@@ -1,59 +1,493 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nos Formations | SYF Formation</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<title>SYF Formation | Formations</title>
 
 <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
 
 <body>
 
-<header>
-
-<nav>
+<nav class="navbar">
 
 <div class="logo">
+
 🎓 SYF Formation
+
 </div>
 
 <ul>
+
 <li><a href="index.html">Accueil</a></li>
-<li><a href="formations.html">Formations</a></li>
+
 <li><a href="contact.html">Contact</a></li>
+
+<li><a href="#" onclick="logout()">Déconnexion</a></li>
+
 </ul>
 
 </nav>
 
-<div class="hero">
+<section class="formations">
 
-<h1>Toutes nos formations</h1>
-
-<p>
-Clique sur une formation pour accéder directement au dossier.
-</p>
+<h2>Nos Formations Premium</h2>
 
 <input
 type="text"
 id="search"
-placeholder="Rechercher une formation..."
->
+placeholder="Rechercher une formation...">
+
+<div class="cards" id="cards">
+
+<!-- Formation 1 -->
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-bullhorn"></i>
+</div>
+
+<h3>Marketing Digital & Community Management</h3>
+
+<p>Formation complète.</p>
+
+<a class="btn"
+target="_blank"
+href="https://drive.google.com/drive/folders/1dxye7oND1UOUS301DAFqKVlfZMKEBNEP?usp=sharing">
+
+Voir la formation
+
+</a>
 
 </div>
 
-</header>
+<!-- Formation 2 -->
 
-<section class="formations">
+<div class="card">
 
-<div id="formations" class="cards">
+<div class="icon">
+<i class="fa-solid fa-palette"></i>
+</div>
+
+<h3>Infographie & Design Graphique</h3>
+
+<p>Formation complète.</p>
+
+<a class="btn"
+target="_blank"
+href="https://drive.google.com/drive/folders/1AeBRHEHqJURCgTJp0CfrAM-NPh9GFs7K?usp=sharing">
+
+Voir la formation
+
+</a>
+
+</div>
+
+<!-- Formation 3 -->
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-film"></i>
+</div>
+
+<h3>Montage Vidéo</h3>
+
+<p>Formation complète.</p>
+
+<a class="btn"
+target="_blank"
+href="https://drive.google.com/drive/folders/1dsrcVjXlM7nMemShfAQbwDR2zrguuPzA?usp=sharing">
+
+Voir la formation
+
+</a>
+
+</div>
+
+<!-- Formation 4 -->
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-pen-ruler"></i>
+</div>
+
+<h3>Design Graphique avec Canva</h3>
+
+<p>Formation complète.</p>
+
+<a class="btn"
+target="_blank"
+href="https://drive.google.com/drive/folders/1MU0yUUTZ-YOqlbAhgnHVxPP_Aub6TsjO?usp=sharing">
+
+Voir la formation
+
+</a>
+
+</div>
+
+<!-- Formation 5 -->
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-code"></i>
+</div>
+
+<h3>Programmation Informatique</h3>
+
+<p>Formation complète.</p>
+
+<a class="btn"
+target="_blank"
+href="https://drive.google.com/drive/folders/1CJGdYrAVzkWcqVtSRgSu7MLYRyM2ltia?usp=sharing">
+
+Voir la formation
+
+</a>
+
+</div>
+<!-- Formation 6 -->
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-user-secret"></i>
+</div>
+
+<h3>Hacking & Cybersécurité</h3>
+
+<p>Formation complète.</p>
+
+<a class="btn"
+target="_blank"
+href="https://drive.google.com/drive/folders/1pG2KU-B1WLWfb0vTp2mDs5rS1I5y7ttA?usp=sharing">
+
+Voir la formation
+
+</a>
+
+</div>
+
+<!-- Formation 7 -->
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-ship"></i>
+</div>
+
+<h3>Acheter en Chine depuis l'Afrique</h3>
+
+<p>Formation complète.</p>
+
+<a class="btn"
+target="_blank"
+href="https://mega.nz/folder/be423LaT#LmklrokU8T50LrqkquAl_g">
+
+Voir la formation
+
+</a>
+
+</div>
+
+<!-- Formation 8 -->
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-calculator"></i>
+</div>
+
+<h3>Comptabilité & Gestion</h3>
+
+<p>Formation complète.</p>
+
+<a class="btn"
+target="_blank"
+href="https://drive.google.com/drive/folders/1jVYVD9HruDdvGy4uKHG5tVz0JP8gX8dc?usp=sharing">
+
+Voir la formation
+
+</a>
+
+</div>
+
+<!-- Formation 9 -->
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-cart-shopping"></i>
+</div>
+
+<h3>E-Commerce & Dropshipping</h3>
+
+<p>Formation complète.</p>
+
+<a class="btn"
+target="_blank"
+href="https://mega.nz/folder/TX5hXBzR#m66sbfT4tyIxjrzrYXHtxA">
+
+Voir la formation
+
+</a>
+
+</div>
+
+<!-- Formation 10 -->
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-users"></i>
+</div>
+
+<h3>Gestion des Ressources Humaines</h3>
+
+<p>Formation complète.</p>
+
+<a class="btn"
+target="_blank"
+href="https://drive.google.com/drive/folders/1jybCqWoFkjd057SIzjBhwiYAKoDphmYH?usp=sharing">
+
+Voir la formation
+
+</a>
+
+</div>
+<!-- Formation 11 -->
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-robot"></i>
+</div>
+
+<h3>Intelligence Artificielle</h3>
+
+<p>Formation complète.</p>
+
+<a class="btn"
+target="_blank"
+href="https://drive.google.com/drive/folders/1nM2nBRTklqzSTZfj3_NnB124uxbHIkc-?usp=sharing">
+
+Voir la formation
+
+</a>
+
+</div>
+
+<!-- Formation 12 -->
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-diagram-project"></i>
+</div>
+
+<h3>Management & Gestion de Projets</h3>
+
+<p>Formation complète.</p>
+
+<a class="btn"
+target="_blank"
+href="https://drive.google.com/drive/folders/1KhWceAMpvI9PQoqT1rfI2Wnq4W7PIgbD?usp=sharing">
+
+Voir la formation
+
+</a>
+
+</div>
+
+<!-- Formation 13 -->
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-brain"></i>
+</div>
+
+<h3>Développement Personnel & Professionnel</h3>
+
+<p>Formation complète.</p>
+
+<a class="btn"
+target="_blank"
+href="https://mega.nz/folder/GXxjCIgb#z0NthKjg_DEVwgneEv43mw">
+
+Voir la formation
+
+</a>
+
+</div>
+
+<!-- Formation 14 -->
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-keyboard"></i>
+</div>
+
+<h3>Secrétariat & Bureautique</h3>
+
+<p>Formation complète.</p>
+
+<a class="btn"
+target="_blank"
+href="https://drive.google.com/drive/folders/1-6Cw4CrvcHrbDHs9F02vXkK7_MMGt2P7?usp=sharing">
+
+Voir la formation
+
+</a>
+
+</div>
+
+<!-- Formation 15 -->
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-microphone"></i>
+</div>
+
+<h3>Art Oratoire & Éloquence</h3>
+
+<p>Formation complète.</p>
+
+<a class="btn"
+target="_blank"
+href="https://mega.nz/folder/6WhgmTLI#BRLb1Ks-vyLEz_vPTYTfwA">
+
+Voir la formation
+
+</a>
+
+</div>
+<!-- Formation 16 -->
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-brands fa-youtube"></i>
+</div>
+
+<h3>YouTube & Monétisation</h3>
+
+<p>Formation complète.</p>
+
+<a class="btn"
+target="_blank"
+href="https://drive.google.com/drive/folders/1GefWZggyR0P_qmRtxpfha7LsMl1GVmkd?usp=sharing">
+
+Voir la formation
+
+</a>
+
+</div>
+
+<!-- Formation 17 -->
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-dumbbell"></i>
+</div>
+
+<h3>Fitness & Diététique</h3>
+
+<p>Formation complète.</p>
+
+<a class="btn"
+target="_blank"
+href="https://mega.nz/folder/OHRCzJJD#H0XybkM1LWcLoDpEQvQ0rw">
+
+Voir la formation
+
+</a>
+
+</div>
+
+<!-- Formation 18 -->
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-chart-line"></i>
+</div>
+
+<h3>Trading & Cryptomonnaie</h3>
+
+<p>Formation complète.</p>
+
+<a class="btn"
+target="_blank"
+href="https://mega.nz/folder/WLZynKJa#x-kEIhfMTudJg5Xyms36bw">
+
+Voir la formation
+
+</a>
+
+</div>
+
+<!-- Formation 19 -->
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-pen-nib"></i>
+</div>
+
+<h3>Copywriting Professionnel</h3>
+
+<p>Formation complète.</p>
+
+<a class="btn"
+target="_blank"
+href="https://mega.nz/folder/7fIxxLRS#h6s6oRtlLE3ynvgSnkOeSA">
+
+Voir la formation
+
+</a>
+
+</div>
+
+<!-- Formation 20 -->
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-brands fa-wordpress"></i>
+</div>
+
+<h3>Création de Sites Internet avec WordPress</h3>
+
+<p>Formation complète.</p>
+
+<a class="btn"
+target="_blank"
+href="https://drive.google.com/drive/folders/1ysyzFzkQ0qTdJrlR79V-ksU-YQCUsSxg?usp=sharing">
+
+Voir la formation
+
+</a>
+
+</div>
 
 </div>
 
@@ -62,12 +496,56 @@ placeholder="Rechercher une formation..."
 <footer>
 
 <p>
-© 2026 SYF Formation
+
+© 2026 SYF Formation - Tous droits réservés
+
 </p>
 
 </footer>
 
-<script src="script.js"></script>
+<script>
+
+if(localStorage.getItem("syf_connecte")!="oui"){
+window.location.href="login.html";
+
+}
+
+function logout(){
+
+localStorage.removeItem("syf_connecte");
+
+window.location.href="login.html";
+
+}
+
+const search=document.getElementById("search");
+
+search.addEventListener("keyup",()=>{
+
+let value=search.value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+
+let titre=card.querySelector("h3").innerText.toLowerCase();
+
+if(titre.includes(value)){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+});
+
+</script>
 
 </body>
+
 </html>
