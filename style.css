@@ -1,0 +1,282 @@
+/* ===========================
+   SYF Formation
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#222;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+header{
+    background:linear-gradient(135deg,#0057ff,#0099ff);
+    color:white;
+    padding-bottom:70px;
+}
+
+nav{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 0;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav ul a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul a:hover{
+    opacity:.7;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    width:90%;
+    max-width:900px;
+    margin:80px auto;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    opacity:.9;
+    margin-bottom:35px;
+}
+
+#search{
+    width:100%;
+    max-width:650px;
+    padding:18px;
+    border:none;
+    border-radius:50px;
+    outline:none;
+    font-size:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+/* ===========================
+   FORMATIONS
+=========================== */
+
+.formations{
+    width:90%;
+    max-width:1400px;
+    margin:70px auto;
+}
+
+.formations h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:38px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.icon{
+
+    width:70px;
+
+    height:70px;
+
+    background:#0057ff;
+
+    color:white;
+
+    border-radius:15px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    font-size:24px;
+
+    margin-bottom:12px;
+
+}
+
+.card p{
+
+    color:#666;
+
+    margin-bottom:20px;
+
+}
+
+.btn{
+
+display:block;
+
+text-align:center;
+
+background:#0057ff;
+
+color:white;
+
+padding:15px;
+
+border-radius:12px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#003dcc;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+background:#111;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+margin-top:70px;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:850px){
+
+nav{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+}
+
+@media(max-width:550px){
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+#search{
+
+font-size:16px;
+
+padding:15px;
+
+}
+
+.logo{
+
+font-size:24px;
+
+}
+
+}
